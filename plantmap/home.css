@@ -1,0 +1,45 @@
+#register .upload-profile-image{
+    position: center;
+    width: 100%;
+    margin-left: 50;
+    margin-right: auto;
+    transition: filter .8s ease;
+}
+
+#register .upload-profile-image:hover{
+    filter: drop-shadow(1px 1px 22px #7584bb);
+}
+
+#upload-profile{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width:50px;
+    margin-top: 0px;
+    opacity: 0;
+}
+
+#upload-profile::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+#upload-profile::before{
+    content: ' ';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: center;
+}
+
+#register .upload-profile-image .camera-icon{
+    position: absolute;
+    top: 40px;
+    width: 30px !important;
+    filter: invert(30%) !important;
+}
+
+#register .upload-profile-image:hover .camera-icon{
+    filter: invert(100%) !important;
+}
